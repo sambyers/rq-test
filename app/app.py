@@ -16,9 +16,9 @@ redis_conn=Redis(
 def task(seconds: int):
     q = Queue(connection=redis_conn)
     result = q.enqueue(long_task, seconds)
-    return {f'Job ID: {result.id}'}
+    return {'job_id': result.id}
 
 @app.get("/job/{id}")
 def get_job_id(id: str):
     job = Job.fetch(id, connection=redis_conn)
-    return {'Status': job.get_status()}
+    return {'status': job.get_status()}

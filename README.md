@@ -11,7 +11,7 @@ Start task:
 curl http://localhost/task/50
 ```
 ```json
-["Job ID: 626ff552-3045-409d-ac87-c37801157831"]
+{"job_id": "790c20fa-773c-4e89-9e3d-b5527fb90494"}
 ```
 
 Get status of job:
@@ -20,14 +20,14 @@ Get status of job:
 curl http://localhost/job/626ff552-3045-409d-ac87-c37801157831
 ```
 ```json
-{"Status":"started"}
+{"status": "started"}
 ```
 
 ```shell
 curl http://localhost/job/626ff552-3045-409d-ac87-c37801157831
 ```
 ```json
-{"Status":"finished"}
+{"status": "finished"}
 ```
 
 ## Clean up
