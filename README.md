@@ -18,14 +18,14 @@ Get status of job:
 curl http://localhost/job/626ff552-3045-409d-ac87-c37801157831
 ```
 ```json
-{"Status":"started"}% 
+{"Status":"started"}
 ```
 
 ```shell
 curl http://localhost/job/626ff552-3045-409d-ac87-c37801157831
 ```
 ```json
-{"Status":"finished"}% 
+{"Status":"finished"}
 ```
 
 ## Clean up
